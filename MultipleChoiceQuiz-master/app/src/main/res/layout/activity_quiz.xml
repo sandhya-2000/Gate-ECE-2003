@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    android:background="#17224D"
+    android:orientation="vertical"
+    tools:context="com.skooltchdev.multiplechoicequiz.QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question Number"
+            android:textColor="#0091EA"
+            android:textSize="25sp"
+            android:padding="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1dp"
+            android:id="@+id/qnotext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qno"
+            android:padding="1dp"
+            android:textSize="25sp"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textColor="#0091EA"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="10dp"
+        android:padding="4dp"
+        android:text="Which thing is alive?"
+        android:textColor="#17E9E1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bird"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="6dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choice1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="door"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="6dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choice2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rock"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="6dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choice3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rock"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="6dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choice4"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textSize="25sp"
+        android:textColor="#F5FAFA"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/score_text"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:text="0"
+        android:textColor="#F5FAFA"
+        android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="quit"
+         android:background="#B71C1C"
+         android:textColor="#fff"
+         android:padding="8dp"
+         android:layout_marginBottom="24dp"
+         android:id="@+id/quit"/>-->
+
+</LinearLayout>
